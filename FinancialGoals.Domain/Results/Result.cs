@@ -10,6 +10,10 @@ namespace FinancialGoals.Domain.Results
             Error = error;
         }
 
+        public Result()
+        {
+        }
+
         public bool HasError { get; private set; }
         public Error? Error { get; private set; }
 

@@ -10,6 +10,7 @@ namespace FinancialGoals.Application.Commands.CreateTransaction
     public class CreateTransactionCommandHandler : IRequestHandler<CreateTransactionCommand, Result>
     {
         private readonly ITransactionRepository _transactionRepository;
+
         public CreateTransactionCommandHandler(ITransactionRepository transactionRepository)
         {
             _transactionRepository = transactionRepository;

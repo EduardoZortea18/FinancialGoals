@@ -9,6 +9,12 @@ namespace FinancialGoals.Domain.Results
             Data = data;
         }
 
+        public GenericResult()
+        {
+        }
+
         public T? Data { get; private set; }
+
+        public GenericResult<T> Ok(T data) => new GenericResult<T>(data, false, null);
     }
 }

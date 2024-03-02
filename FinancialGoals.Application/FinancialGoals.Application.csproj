@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Queries\" />
+    <Folder Include="Queries\GetAllTransactions\" />
+    <Folder Include="Queries\GetTransaction\" />
   </ItemGroup>
 
   <ItemGroup>
