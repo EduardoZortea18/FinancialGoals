@@ -1,0 +1,12 @@
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\bin\Debug\net8.0\FinancialGoals.Domain.deps.json
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\bin\Debug\net8.0\FinancialGoals.Domain.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\bin\Debug\net8.0\FinancialGoals.Domain.pdb
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\FinancialGoals.Domain.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\FinancialGoals.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\FinancialGoals.Domain.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\FinancialGoals.Domain.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\FinancialGoals.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\FinancialGoals.Domain.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\refint\FinancialGoals.Domain.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\FinancialGoals.Domain.pdb
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\ref\FinancialGoals.Domain.dll

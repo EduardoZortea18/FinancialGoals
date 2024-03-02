@@ -1,0 +1,15 @@
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\bin\Debug\net8.0\FinancialGoals.Application.deps.json
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\bin\Debug\net8.0\FinancialGoals.Application.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\bin\Debug\net8.0\FinancialGoals.Application.pdb
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\bin\Debug\net8.0\FinancialGoals.Domain.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\bin\Debug\net8.0\FinancialGoals.Domain.pdb
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.csproj.AssemblyReference.cache
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.csproj.CopyComplete
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\refint\FinancialGoals.Application.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.pdb
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\ref\FinancialGoals.Application.dll

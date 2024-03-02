@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zF9sSe7msfO3ChW2gXqd/TYZa7MoK5iN/LQPzSqk7iv55nz/fH9qdCGKa7iYITIh4iwqs3mWPlnoZmt54QTQzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Pichau\\Desktop\\NewProjects\\FinancialGoals\\FinancialGoals.Domain\\FinancialGoals.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Pichau\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}

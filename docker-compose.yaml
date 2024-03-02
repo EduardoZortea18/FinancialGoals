@@ -1,0 +1,17 @@
+version: latest
+
+services:
+  postgres-compose:
+    image: postgres
+    environment:
+      POSTGRES_USER: "FinancialGoals"
+      POSTGRES_PASSWORD: "FinancialGoalsDb2024!"
+    container_name: financialgoals
+    restart: always
+    ports:
+      - "17432:5432"
+    networks:
+      - postgres-compose-network
+networks:
+  postgres-compose-network:
+    driver: bridge
