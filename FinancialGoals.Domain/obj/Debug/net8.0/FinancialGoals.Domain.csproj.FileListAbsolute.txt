@@ -10,3 +10,4 @@ C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Deb
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\refint\FinancialGoals.Domain.dll
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\FinancialGoals.Domain.pdb
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\ref\FinancialGoals.Domain.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Domain\obj\Debug\net8.0\FinancialGoals.Domain.sourcelink.json

@@ -13,3 +13,4 @@ C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Infra\obj\Debu
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Infra\obj\Debug\net8.0\refint\FinancialGoals.Infra.dll
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Infra\obj\Debug\net8.0\FinancialGoals.Infra.pdb
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Infra\obj\Debug\net8.0\ref\FinancialGoals.Infra.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Infra\obj\Debug\net8.0\FinancialGoals.Infra.sourcelink.json

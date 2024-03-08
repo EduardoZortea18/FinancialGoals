@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Queries\GetAllTransactions\" />
-    <Folder Include="Queries\GetTransaction\" />
   </ItemGroup>
 
   <ItemGroup>

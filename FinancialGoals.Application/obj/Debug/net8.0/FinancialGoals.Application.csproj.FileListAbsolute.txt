@@ -13,3 +13,4 @@ C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\ob
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\refint\FinancialGoals.Application.dll
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.pdb
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\ref\FinancialGoals.Application.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Application\obj\Debug\net8.0\FinancialGoals.Application.sourcelink.json

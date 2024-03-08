@@ -17,3 +17,4 @@ C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.CrossCutting\o
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.CrossCutting\obj\Debug\net8.0\ref\FinancialGoals.CrossCutting.dll
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.CrossCutting\bin\Debug\net8.0\FinancialGoals.Application.dll
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.CrossCutting\bin\Debug\net8.0\FinancialGoals.Application.pdb
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.CrossCutting\obj\Debug\net8.0\FinancialGoals.CrossCutting.sourcelink.json

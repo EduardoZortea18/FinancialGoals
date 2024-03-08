@@ -115,3 +115,4 @@ C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Api\obj\Debug\
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Api\obj\Debug\net8.0\FinancialGoals.Api.pdb
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Api\obj\Debug\net8.0\FinancialGoals.Api.genruntimeconfig.cache
 C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Api\obj\Debug\net8.0\ref\FinancialGoals.Api.dll
+C:\Users\Pichau\Desktop\NewProjects\FinancialGoals\FinancialGoals.Api\obj\Debug\net8.0\FinancialGoals.Api.sourcelink.json
