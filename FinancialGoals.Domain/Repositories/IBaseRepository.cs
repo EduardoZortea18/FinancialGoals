@@ -9,6 +9,7 @@ namespace FinancialGoals.Domain.Repositories
         Task Update(T entity);
         Task<T> GetOne(Expression<Func<T, bool>> expression);
         Task<List<T>> GetAll();
+        Task<bool> Exists(Expression<Func<T, bool>> expression);
         Task SaveChangesAsync();
     }
 }

@@ -37,6 +37,9 @@ namespace FinancialGoals.Infra.Persistence.Repositories
             await SaveChangesAsync();
         }
 
+        public async Task<bool> Exists(Expression<Func<T, bool>> expression)
+            => await _context.Set<T>().AsNoTracking().Where(expression).AnyAsync();
+
         public async Task SaveChangesAsync()
         {
             await _context.SaveChangesAsync();

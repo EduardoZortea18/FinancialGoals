@@ -24,6 +24,7 @@ namespace FinancialGoals.CrossCutting
 
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddTransient<ITransactionRepository, TransactionRepository>();
+            services.AddTransient<IFinancialGoalRepository, FinancialGoalRepository>();
         }
 
         public static void AddApplication(IServiceCollection services)

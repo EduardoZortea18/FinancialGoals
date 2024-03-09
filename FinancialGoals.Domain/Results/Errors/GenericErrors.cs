@@ -5,6 +5,9 @@
         public static Error NotFound(string objectName)
             => new Error("NotFound", $"{objectName} not found");
 
+        public static Error AlreadyExists(string objectName)
+            => new Error("AlreadyExists", $"{objectName} already exists");
+
         public static Error? NoError() => default;
     }
 }

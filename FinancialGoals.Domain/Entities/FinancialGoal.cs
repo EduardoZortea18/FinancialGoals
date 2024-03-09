@@ -2,13 +2,12 @@
 {
     public class FinancialGoal : BaseEntity
     {
-        public FinancialGoal(string title, decimal targetAmount, DateTime deadline, decimal monthlyAmount, List<Transaction> transactions)
+        public FinancialGoal(string title, decimal targetAmount, DateTime deadline, decimal monthlyAmount)
         {
             Title = title;
             TargetAmount = targetAmount;
             Deadline = deadline;
             MonthlyAmount = monthlyAmount;
-            Transactions = transactions;
         }
 
         public FinancialGoal()

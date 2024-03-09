@@ -1,5 +1,6 @@
 using FinancialGoals.Api.Helpers;
 using FinancialGoals.Application.Validators;
+using FinancialGoals.CrossCutting;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
@@ -8,9 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
-
 builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
 builder.Services.AddValidatorsFromAssemblyContaining<CreateTransactionCommandValidator>();
+
+builder.Services.ConfigureInjection(builder.Configuration);
 
 builder.Services.AddControllers(options =>
 {
@@ -30,9 +32,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
