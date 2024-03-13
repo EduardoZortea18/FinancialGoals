@@ -19,5 +19,13 @@
         public DateTime Deadline { get; private set; }
         public decimal MonthlyAmount { get; private set; }
         public List<Transaction> Transactions { get; private set; }
+
+        public void Update(string title, decimal targetAmount, DateTime deadline, decimal monthlyAmount)
+        {
+            Title = title;
+            TargetAmount = targetAmount;
+            Deadline = deadline;
+            MonthlyAmount = monthlyAmount;
+        }
     }
 }
