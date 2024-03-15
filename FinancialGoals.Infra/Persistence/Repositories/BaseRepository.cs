@@ -1,12 +1,7 @@
 ﻿using FinancialGoals.Domain.Entities;
 using FinancialGoals.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FinancialGoals.Infra.Persistence.Repositories
 {
@@ -19,10 +14,11 @@ namespace FinancialGoals.Infra.Persistence.Repositories
             _context = context;
         }
 
-        public async Task Create(T entity)
+        public async Task<T> Create(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
             await SaveChangesAsync();
+            return entity;
         }
 
         public async Task<List<T>> GetAll()

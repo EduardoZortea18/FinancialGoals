@@ -18,7 +18,7 @@ namespace FinancialGoals.Application.Validators
                 .NotNull();
 
             RuleFor(x => x.MonthlyAmount)
-                .GreaterThan(0);
+                .GreaterThanOrEqualTo(0);
         }
     }
 }

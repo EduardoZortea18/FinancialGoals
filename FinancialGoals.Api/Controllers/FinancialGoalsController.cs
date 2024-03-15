@@ -3,6 +3,7 @@ using FinancialGoals.Application.Commands.RemoveFinancialGoal;
 using FinancialGoals.Application.Commands.UpdateFinancialGoal;
 using FinancialGoals.Application.Queries.GetAllFinancialGoals;
 using FinancialGoals.Application.Queries.GetFinancialGoal;
+using FinancialGoals.Application.Queries.GetFinancialGoalReport;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -59,6 +60,13 @@ namespace FinancialGoals.Api.Controllers
             }
 
             return NoContent();
+        }
+
+        [HttpGet("/{id}/report")]
+        public async Task<IActionResult> GetReport([FromRoute]Guid id)
+        {
+            var response = await _mediator.Send(new GetFinancialGoalReportQuery(id));
+            return Content(response.Data, "text/csv");
         }
     }
 }

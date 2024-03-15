@@ -3,6 +3,7 @@ using System;
 using FinancialGoals.Infra;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FinancialGoals.Infra.Migrations
 {
     [DbContext(typeof(FinancialGoalsContext))]
-    partial class FinancialGoalsContextModelSnapshot : ModelSnapshot
+    [Migration("20240315095107_UpdateFinancialGoalTable")]
+    partial class UpdateFinancialGoalTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

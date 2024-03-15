@@ -9,9 +9,9 @@ namespace FinancialGoals.Application.Commands.RemoveFinancialGoal
 {
     public class RemoveFinancialGoalCommandHandler : IRequestHandler<RemoveFinancialGoalCommand, Result>
     {
-        private readonly IFinancialGoalRepository _financialGoalRepository;
+        private readonly ITransacationRepository _financialGoalRepository;
 
-        public RemoveFinancialGoalCommandHandler(IFinancialGoalRepository financialGoalRepository)
+        public RemoveFinancialGoalCommandHandler(ITransacationRepository financialGoalRepository)
         {
             _financialGoalRepository = financialGoalRepository;
         }
@@ -36,6 +36,8 @@ namespace FinancialGoals.Application.Commands.RemoveFinancialGoal
               financialGoal.Title,
               financialGoal.TargetAmount,
               financialGoal.Deadline,
-              financialGoal.MonthlyAmount);
+              financialGoal.MonthlyAmount,
+              financialGoal.Status,
+              financialGoal.ActualAmount);
     }
 }

@@ -1,4 +1,5 @@
-﻿using FinancialGoals.Domain.Results;
+﻿using FinancialGoals.Domain.Enums;
+using FinancialGoals.Domain.Results;
 using MediatR;
 
 namespace FinancialGoals.Application.Commands.UpdateFinancialGoal
@@ -6,9 +7,10 @@ namespace FinancialGoals.Application.Commands.UpdateFinancialGoal
     public sealed record UpdateFinancialGoalCommand : IRequest<Result>
     {
         public Guid Id { get; set; }
-        public string title { get; init; }
-        public decimal targetAmount { get; init; }
-        public DateTime deadline { get; init; }
-        public decimal monthlyAmount { get; init; }
+        public string Title { get; init; }
+        public decimal TargetAmount { get; init; }
+        public DateTime Deadline { get; init; }
+        public decimal MonthlyAmount { get; init; }
+        public FinancialGoalStatus Status { get; init; }
     }
 }

@@ -8,9 +8,9 @@ namespace FinancialGoals.Application.Queries.GetAllFinancialGoals
 {
     public class GetAllFinancialGoalsQueryHandler : IRequestHandler<GetAllFinancialGoalsQuery, Result>
     {
-        private readonly IFinancialGoalRepository _financialGoalRepository;
+        private readonly ITransacationRepository _financialGoalRepository;
 
-        public GetAllFinancialGoalsQueryHandler(IFinancialGoalRepository financialGoalRepository)
+        public GetAllFinancialGoalsQueryHandler(ITransacationRepository financialGoalRepository)
         {
             _financialGoalRepository = financialGoalRepository;
         }
@@ -28,6 +28,8 @@ namespace FinancialGoals.Application.Queries.GetAllFinancialGoals
               financialGoal.Title,
               financialGoal.TargetAmount,
               financialGoal.Deadline,
-              financialGoal.MonthlyAmount);
+              financialGoal.MonthlyAmount,
+              financialGoal.Status,
+              financialGoal.ActualAmount);
     }
 }

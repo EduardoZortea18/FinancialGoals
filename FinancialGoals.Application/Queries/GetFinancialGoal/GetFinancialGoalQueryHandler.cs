@@ -1,4 +1,5 @@
 ﻿using FinancialGoals.Application.Models;
+using FinancialGoals.Domain.Entities;
 using FinancialGoals.Domain.Repositories;
 using FinancialGoals.Domain.Results;
 using FinancialGoals.Domain.Results.Errors;
@@ -8,9 +9,9 @@ namespace FinancialGoals.Application.Queries.GetFinancialGoal
 {
     public class GetFinancialGoalQueryHandler : IRequestHandler<GetFinancialGoalQuery, Result>
     {
-        private readonly IFinancialGoalRepository _repository;
+        private readonly ITransacationRepository _repository;
 
-        public GetFinancialGoalQueryHandler(IFinancialGoalRepository repository)
+        public GetFinancialGoalQueryHandler(ITransacationRepository repository)
         {
             _repository = repository;
         }
@@ -23,10 +24,17 @@ namespace FinancialGoals.Application.Queries.GetFinancialGoal
                 return new Result().Failure(GenericErrors.NotFound("Transaction"));
             }
 
-            var responseModel = new FinancialGoalResponseModel(
-                financialGoal.Id, financialGoal.Title, financialGoal.TargetAmount, financialGoal.Deadline, financialGoal.MonthlyAmount);
-
-            return new GenericResult<FinancialGoalResponseModel>().Ok(responseModel);
+            return new GenericResult<FinancialGoalResponseModel>().Ok(CreateResponse(financialGoal));
         }
+
+        private FinancialGoalResponseModel CreateResponse(FinancialGoal financialGoal)
+        => new FinancialGoalResponseModel(
+            financialGoal.Id,
+            financialGoal.Title,
+            financialGoal.TargetAmount,
+            financialGoal.Deadline,
+            financialGoal.MonthlyAmount,
+            financialGoal.Status,
+            financialGoal.ActualAmount);
     }
 }

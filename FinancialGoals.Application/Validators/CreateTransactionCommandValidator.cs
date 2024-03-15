@@ -8,7 +8,7 @@ namespace FinancialGoals.Application.Validators
         public CreateTransactionCommandValidator()
         {
             RuleFor(x => x.Date)
-                .GreaterThanOrEqualTo(DateTime.UtcNow)
+                .GreaterThanOrEqualTo(DateTime.Now)
                 .NotEmpty()
                 .NotNull();
 

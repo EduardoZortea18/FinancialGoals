@@ -9,9 +9,9 @@ namespace FinancialGoals.Application.Commands.CreateFinancialGoal
 {
     public class CreateFinancialGoalCommandHandler : IRequestHandler<CreateFinancialGoalCommand, Result>
     {
-        private readonly IFinancialGoalRepository _repository;
+        private readonly ITransacationRepository _repository;
 
-        public CreateFinancialGoalCommandHandler(IFinancialGoalRepository repository)
+        public CreateFinancialGoalCommandHandler(ITransacationRepository repository)
         {
             _repository = repository;
         }
@@ -26,9 +26,18 @@ namespace FinancialGoals.Application.Commands.CreateFinancialGoal
                 return new Result().Failure(GenericErrors.AlreadyExists("FinancialGoal"));
             }
 
-            await _repository.Create(command);
-
-            return new GenericResult<FinancialGoalResponseModel>().Ok(command);
+            var entity = await _repository.Create(command);
+            return new GenericResult<FinancialGoalResponseModel>().Ok(CreateResponse(entity));
         }
+
+        private FinancialGoalResponseModel CreateResponse(FinancialGoal financialGoal)
+        => new FinancialGoalResponseModel(
+            financialGoal.Id,
+            financialGoal.Title,
+            financialGoal.TargetAmount,
+            financialGoal.Deadline,
+            financialGoal.MonthlyAmount,
+            financialGoal.Status,
+            financialGoal.ActualAmount);
     }
 }

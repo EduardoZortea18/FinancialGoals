@@ -4,19 +4,14 @@ using FinancialGoals.Domain.Repositories;
 using FinancialGoals.Domain.Results;
 using FinancialGoals.Domain.Results.Errors;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FinancialGoals.Application.Commands.UpdateFinancialGoal
 {
     public class UpdateFinancialGoalCommandHandler : IRequestHandler<UpdateFinancialGoalCommand, Result>
     {
-        private readonly IFinancialGoalRepository _financialGoalRepository;
+        private readonly ITransacationRepository _financialGoalRepository;
 
-        public UpdateFinancialGoalCommandHandler(IFinancialGoalRepository financialGoalRepository)
+        public UpdateFinancialGoalCommandHandler(ITransacationRepository financialGoalRepository)
         {
             _financialGoalRepository = financialGoalRepository;
         }
@@ -30,7 +25,7 @@ namespace FinancialGoals.Application.Commands.UpdateFinancialGoal
                 return new Result().Failure(GenericErrors.NotFound("FinancialGoal"));
             }
 
-            financialGoal.Update(command.title, command.targetAmount, command.deadline, command.monthlyAmount);
+            financialGoal.Update(command.Title, command.TargetAmount, command.Deadline, command.MonthlyAmount, command.Status);
             await _financialGoalRepository.Update(financialGoal);
 
             return new GenericResult<FinancialGoalResponseModel>().Ok(CreateResponse(financialGoal));
@@ -42,6 +37,8 @@ namespace FinancialGoals.Application.Commands.UpdateFinancialGoal
               financialGoal.Title,
               financialGoal.TargetAmount,
               financialGoal.Deadline,
-              financialGoal.MonthlyAmount);
+              financialGoal.MonthlyAmount,
+              financialGoal.Status,
+              financialGoal.ActualAmount);
     }
 }
