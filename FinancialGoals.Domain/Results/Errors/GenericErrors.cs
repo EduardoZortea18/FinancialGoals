@@ -11,6 +11,9 @@
         public static Error ValidationProblem(string message)
             => new Error("ValidationProblem", message);
 
+        public static Error InternalProblem(string message)
+          => new Error("InternalProblem", message);
+
         public static Error? NoError() => default;
     }
 }
